@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Surface (haut) */
+.surface {
+  flex: 1;
+  background: linear-gradient(to bottom, #a0e7ff, #ffffff);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sky {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sun {
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  box-shadow: 0 0 20px rgba(255, 223, 0, 0.7);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+/* Eau (bas) */
+.underwater {
+  flex: 1;
+  background: linear-gradient(to top, #004466, #0077aa);
+  position: relative;
+  overflow: hidden;
+}
+
+.water {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.floating-letter {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+/* Exemple de placement */
+.floating-letter:nth-child(1) {
+  top: 30%;
+  left: 10%;
+}
+
+.floating-letter:nth-child(2) {
+  top: 60%;
+  left: 30%;
+}
+
+.floating-letter:nth-child(3) {
+  top: 50%;
+  left: 60%;
+}
+
+.floating-letter:nth-child(4) {
+  top: 40%;
+  left: 80%;
+}
