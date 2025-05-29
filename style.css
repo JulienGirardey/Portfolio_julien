@@ -88,21 +88,25 @@ h1 {
 .floating-letter:nth-child(1) {
   top: 30%;
   left: 10%;
+  animation-delay: 0s;
 }
 
 .floating-letter:nth-child(2) {
   top: 60%;
   left: 30%;
+  animation-delay: 1s;
 }
 
 .floating-letter:nth-child(3) {
   top: 50%;
   left: 60%;
+  animation-delay: 2s;
 }
 
 .floating-letter:nth-child(4) {
   top: 40%;
   left: 80%;
+  animation-delay: 3s;
 }
 @keyframes float {
 	0% {
