@@ -81,7 +81,7 @@ h1 {
   color: white;
   font-size: 2rem;
   opacity: 0.8;
-  animation: float 4s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 /* Exemple de placement */
@@ -110,12 +110,18 @@ h1 {
 }
 @keyframes float {
 	0% {
-		transform: translateY(0px) rotate(0deg);
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	25% {
+		transform: translate(10px, -10px) rotate(2deg);
 	}
 	50% {
-		transform: translateY(-20px) rotate(5deg);
+		transform: translate(0px, -20px) rotate(-2deg);
+	}
+	75% {
+		transform: translate(-10px, -10px) rotate(2deg);
 	}
 	100% {
-		transform: translateY(0px) rotate(0deg);
+		transform: translate(0px, 0px) rotate(0deg);
 	}
 }
