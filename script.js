@@ -7,6 +7,10 @@ function createBubble() {
 	// position horizontale aléatoire
 	bubble.style.left = `${Math.random() * 100}%`;
 
+	// position verticale aléatoire (de 40% a 90%)
+	const topPosition = 40 + Math.random() * 50;
+	bubble.style.top = `${topPosition}%`;
+
 	// Taille aléatoire
 	const size = Math.random() * 10 + 5;
 	bubble.style.width = `${size}px`;
