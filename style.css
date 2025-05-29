@@ -110,7 +110,6 @@ h1 {
 }
 .bubbles {
 	position: absolute;
-	top: auto;
 	width: 10px;
 	height: 10px;
 	background: rgba(255, 255, 255, 0.5);
