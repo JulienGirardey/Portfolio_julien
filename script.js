@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Vagues
     ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 100;
 
     for (let i = 0; i < 5; i++) {
       ctx.beginPath();
@@ -60,11 +60,11 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       // Perspective: couleur plus claire pour les vagues du haut, plus foncée pour celles du bas
       const t = i / 4; // 0 (haut) à 1 (bas)
-      const r = Math.round(120 + 60 * (1 - t)); // du bleu clair au bleu foncé
-      const g = Math.round(180 + 40 * (1 - t));
-      const b = Math.round(255 - 55 * t);
+      const r = Math.round(40 + 10 * (1 - t));   // base 30, peu de rouge
+      const g = Math.round(80 + 20 * (1 - t));   // base 70, un peu de vert
+      const b = Math.round(140 + 30 * (1 - t));  // base 120, beaucoup de bleu
       ctx.strokeStyle = `rgba(${r},${g},${b},${0.25 + t * 0.18})`;
-      ctx.shadowColor = `rgba(${r},${g},${b},0.15)`;
+      ctx.shadowColor = `rgba(${r},${g},${b},0.001)`;
       ctx.shadowBlur = 6 - i;
       ctx.stroke();
     }
